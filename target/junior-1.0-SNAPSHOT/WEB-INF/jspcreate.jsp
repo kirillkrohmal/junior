@@ -10,7 +10,16 @@
 <form action="<%=request.getContextPath()%>/create" method="post">
     <table>
         <tr>
-            <td>Login:</td>
+            <td>Rows:</td>
+            <td>
+                <label>
+                    <input type="text" name="rows">
+                </label>
+            </td>
+        <tr>
+
+        <tr>
+            <td>Columns::</td>
             <td>
                 <label>
                     <input type="text" name="rows">

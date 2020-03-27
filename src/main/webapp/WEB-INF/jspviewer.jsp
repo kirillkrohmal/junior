@@ -12,12 +12,14 @@
 
     <td>id:</td>
     <td>login:</td>
+    <td>columns:</td>
 
     <c:forEach items="${hall}" var="hall" varStatus="status">
         <tr>
             <input type="hidden" value="id"/>
             <td>"${hall.id}"</td>
-            <td>"${hall.login}"</td>
+            <td>"${hall.rows}"</td>
+            <td>"${hall.columns}"</td>
         </tr>
     </c:forEach>
 
