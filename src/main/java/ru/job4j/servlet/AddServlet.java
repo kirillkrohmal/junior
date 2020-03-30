@@ -25,7 +25,7 @@ public class AddServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        validator.add(new Hall(atomicInteger.getAndIncrement(), req.getParameter("rows"), req.getParameter("columns")));
+        validator.save(new Hall(atomicInteger.getAndIncrement(), req.getParameter("rows"), req.getParameter("columns")));
         resp.sendRedirect(String.format("%s%s", req.getContextPath(), "/list"));
     }
 }

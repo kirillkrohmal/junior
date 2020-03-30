@@ -1,5 +1,6 @@
 package ru.job4j.servlet;
 
+import ru.job4j.model.Hall;
 import ru.job4j.validator.Validator;
 
 import javax.servlet.RequestDispatcher;
@@ -11,6 +12,8 @@ import java.io.IOException;
 
 public class JspServlet extends HttpServlet {
     private final Validator validator = Validator.getInstance();
+
+
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
