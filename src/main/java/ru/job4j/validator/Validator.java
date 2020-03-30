@@ -3,6 +3,7 @@ package ru.job4j.validator;
 import ru.job4j.model.Hall;
 import ru.job4j.storage.JdbcStorage;
 
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;

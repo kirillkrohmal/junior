@@ -10,18 +10,17 @@ public class JdbcStorage {
     private static Connection connection;
 
     public Hall save(Hall hall) {
-        String s = "INSERT into halls(id, rows, columns) VALUES(?, ?, ?)";
+        String s = "INSERT into halls(rows, columns) VALUES(?, ?)";
 
-        try (PreparedStatement statement = connection.prepareStatement(s)) {
+        try(Connection connection = init()) {
+            Statement statement = connection.createStatement();
 
-            statement.setInt(1, hall.getId());
-            statement.setString(2, hall.getRows());
-            statement.setString(3, hall.getColumns());
-
-            statement.executeUpdate();
+            statement.executeUpdate(s);
+            connection.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
         return hall;
     }
 
@@ -31,11 +30,9 @@ public class JdbcStorage {
 
         try (Connection connection = init()) {
             String s = "SELECT id, rows, columns FROM halls";
-
             PreparedStatement statement = connection.prepareStatement(s);
 
             ResultSet resultSet = statement.executeQuery();
-
 
             while (resultSet.next()) {
                 Hall haller = new Hall();

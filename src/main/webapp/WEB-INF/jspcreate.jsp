@@ -10,17 +10,20 @@
 <form action="<%=request.getContextPath()%>/create" method="post">
     <table>
         <tr>
-            <td>Rows:</td>
             <td>
-                <label>
-                    <input type="text" name="rows">
+                <label hidden id="id">
+                    <input type="text" name="id">
                 </label>
             </td>
-            <td>Columns:</td>
+
             <td>
-                <label>
-                    <input type="text" name="columns">
-                </label>
+                <label for="rows">Rows:</label>
+                <input id="rows" type="text" name="rows">
+            </td>
+
+            <td>
+                <label for="columns">Columns:</label>
+                <input id="columns" type="text" name="columns">
             </td>
         <tr>
             <td><input type="submit" value="Save" class="save"/></td>
