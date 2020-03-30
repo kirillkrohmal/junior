@@ -6,8 +6,7 @@ import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class Validator {
-
-    private static Validator SINGLETON= new Validator();
+    private static Validator SINGLETON = new Validator();
     private static List<Hall> halls = new ArrayList<>();
 
     private ConcurrentHashMap<Integer, Hall> storage = new ConcurrentHashMap<>();

@@ -5,7 +5,6 @@ public class Hall {
     private String rows;
     private String columns;
 
-
     public Hall() {
     }
 

@@ -11,10 +11,10 @@
 <table border="1">
 
     <td>id:</td>
-    <td>login:</td>
+    <td>rows:</td>
     <td>columns:</td>
 
-    <c:forEach items="${hall}" var="hall" varStatus="status">
+    <c:forEach items="${haller}" var="hall" varStatus="status">
         <tr>
             <input type="hidden" value="id"/>
             <td>"${hall.id}"</td>

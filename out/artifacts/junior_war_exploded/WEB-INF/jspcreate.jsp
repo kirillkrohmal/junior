@@ -16,17 +16,15 @@
                     <input type="text" name="rows">
                 </label>
             </td>
-        <tr>
 
-        <tr>
-            <td>Columns::</td>
+            <td>Columns:</td>
             <td>
                 <label>
                     <input type="text" name="rows">
                 </label>
             </td>
         <tr>
-            <td><input type="submit" align="center" value="Submit"></td>
+            <td><input type="submit" value="Save" class="save"/></td>
         </tr>
 
     </table>
