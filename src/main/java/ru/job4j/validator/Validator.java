@@ -13,7 +13,6 @@ public class Validator {
     private static List<Hall> halls = new ArrayList<>();
     JdbcStorage jdbcStorage = new JdbcStorage();
 
-
     private ConcurrentHashMap<Integer, Hall> storage = new ConcurrentHashMap<>();
 
     public Collection<Hall> values() {

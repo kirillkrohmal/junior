@@ -13,8 +13,6 @@ import java.io.IOException;
 public class JspServlet extends HttpServlet {
     private final Validator validator = Validator.getInstance();
 
-
-
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.setAttribute("haller", this.validator.values());

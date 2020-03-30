@@ -7,12 +7,9 @@ import java.sql.*;
 import java.util.Properties;
 
 public class JdbcStorage {
-
     private static Connection connection;
-    private int size = 0;
 
     public Hall save(Hall hall) {
-
         String s = "INSERT into halls(id, rows, columns) VALUES(?, ?, ?)";
 
         try (PreparedStatement statement = connection.prepareStatement(s)) {
@@ -25,14 +22,12 @@ public class JdbcStorage {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
         return hall;
     }
 
-
     public Hall[] getAll() {
+        int size = 0;
         Hall[] halls = new Hall[size];
-
 
         try (Connection connection = init()) {
             String s = "SELECT id, rows, columns FROM halls";
@@ -57,7 +52,6 @@ public class JdbcStorage {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
         return halls;
     }
 

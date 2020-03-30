@@ -19,7 +19,7 @@
             <td>Columns:</td>
             <td>
                 <label>
-                    <input type="text" name="rows">
+                    <input type="text" name="columns">
                 </label>
             </td>
         <tr>

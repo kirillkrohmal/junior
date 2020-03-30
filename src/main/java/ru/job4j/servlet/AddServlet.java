@@ -18,7 +18,6 @@ public class AddServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html");
-
         RequestDispatcher dispatcher = req.getRequestDispatcher("/WEB-INF/jspcreate.jsp");
         dispatcher.forward(req, resp);
     }
