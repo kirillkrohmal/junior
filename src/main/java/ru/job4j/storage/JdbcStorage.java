@@ -10,7 +10,7 @@ public class JdbcStorage {
     private static Connection connection;
 
     public Hall save(Hall hall) {
-        String s = "INSERT into halls(rows, columns) VALUES(?, ?)";
+        String s = "INSERT into halls(id, rows, columns) VALUES(?, ?, ?)";
 
         try(Connection connection = init()) {
             Statement statement = connection.createStatement();

@@ -25,9 +25,8 @@
                 <label for="columns">Columns:</label>
                 <input id="columns" type="text" name="columns">
             </td>
-        <tr>
-            <td><input type="submit" value="Save" class="save"/></td>
-        </tr>
+
+            <input type="submit" value="Save" class="save"/>
 
     </table>
 </form>

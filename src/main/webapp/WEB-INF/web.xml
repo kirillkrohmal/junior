@@ -23,5 +23,4 @@
         <servlet-name>AddServlet</servlet-name>
         <url-pattern>/create</url-pattern>
     </servlet-mapping>
-
 </web-app>

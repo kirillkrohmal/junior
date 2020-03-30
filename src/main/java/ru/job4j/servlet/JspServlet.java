@@ -16,7 +16,6 @@ public class JspServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.setAttribute("haller", this.validator.values());
-
         RequestDispatcher dispatcher = req.getRequestDispatcher("/WEB-INF/jspviewer.jsp");
 
         dispatcher.forward(req, resp);
