@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <title>Пользователи</title>
 </head>
-
 <body>
+
 <form action="<%=request.getContextPath()%>/create" method="post">
     <table>
         <tr>
@@ -16,7 +16,6 @@
                     <input type="text" name="rows">
                 </label>
             </td>
-
             <td>Columns:</td>
             <td>
                 <label>

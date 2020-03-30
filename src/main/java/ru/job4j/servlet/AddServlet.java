@@ -1,4 +1,7 @@
-package ru.job4j;
+package ru.job4j.servlet;
+
+import ru.job4j.model.Hall;
+import ru.job4j.validator.Validator;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;

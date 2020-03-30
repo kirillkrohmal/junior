@@ -5,18 +5,15 @@
     <meta charset="UTF-8">
     <title>Пользователи</title>
 </head>
-
 <body>
 
 <table border="1">
-
     <td>id:</td>
     <td>rows:</td>
     <td>columns:</td>
 
     <c:forEach items="${haller}" var="hall" varStatus="status">
         <tr>
-            <input type="hidden" value="id"/>
             <td>"${hall.id}"</td>
             <td>"${hall.rows}"</td>
             <td>"${hall.columns}"</td>

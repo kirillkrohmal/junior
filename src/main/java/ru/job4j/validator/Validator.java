@@ -1,4 +1,6 @@
-package ru.job4j;
+package ru.job4j.validator;
+
+import ru.job4j.model.Hall;
 
 import java.util.ArrayList;
 import java.util.Collection;

@@ -1,4 +1,4 @@
-package ru.job4j;
+package ru.job4j.model;
 
 public class Hall {
     private int id;
